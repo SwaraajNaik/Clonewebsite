@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    color: #2294ed;
+    transition-duration: 0.2s;
+}
+
+:root
+{
+    --primary-text-color :#183b56;
+    --secondary-text-color : #577592;
+    --accent-color :#2294ed;
+    --accent-color-dark : #1d69a3;
+    --padding-inline-section :20px;
+}
+
+body
+{
+    font-family: 'Poppins',sans-serif ;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    line-height: 1.75rem;
+}
+ul{
+    list-style: none;
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+}
+.primary-button
+{
+    background-color: var(--accent-color) ;
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 1px 1px 2px var(--accent-color-dark);
+    transition: 0.2s ease-out;
+
+}
+.primary-button:hover
+{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button
+{
+    background-color: var(--accent-color-dark);
+        border-radius: 6px;
+        font-weight: 700;
+        color: white !important;
+        padding: 12px 24px;
+        box-shadow: 1px 1px 2px var(--accent-color-dark);
+        transition: 0.2s ease-out;
+
+}
+
+.secondary-button:hover
+{
+    background-color: blueviolet;
+}
+/*utility class*/
+
+.small-bold-text
+{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.container
+{
+    max-width: 1080px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.top-banner
+{
+    background-color: rgb(255, 109, 190);
+    background-image: url(asset\ 32.png);
+    background-size: 300px;
+
+}
+.banner-text
+{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.main-nav
+{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.company-logo img{
+      width: 200px;
+}
+.nav-link{
+    flex-basis: 730px;
+}
+
+.nav-link ul{
+    justify-content:end ;
+    gap: 40px;
+}
+
+.hover-link
+{
+    color: var(--primary-text-color-primary-text-color);
+}
+.hover-link:hover
+{
+    color: var(--accent-color);
+    transition: 0.3s ease-in-out;
+}
+
+header{
+    padding: 50px var(--padding-inline-section);
+}
+
+header h1{
+    margin-top: 20px;
+}
+header a{
+    margin-top: 20px;
+}
+.header-section
+{
+    justify-content: center ;
+    gap: 50px;
+    font-family: 'Poppins',sans-serif;
+}
+ .header-section img
+ {
+    width: 600px;
+
+ }
+
+ .header-left{
+    text-align: left;
+    max-width: 40vw;
+    
+ }
+
+ .company-heading
+ {
+    text-align: center;
+    margin: 10px 2px 10px 2px;
+ }
+
+ .company-partner{
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+ }
+
+ .company-partner img{
+    margin-top: 30px;
+    padding: auto;
+    height: 40px;
+ }
+
+ /*Resaerch*/
+
+ .feature-section
+ {
+    padding: 80px var(--padding-inline-section) 0;
+ }
+
+
+
+ .feature-header
+ {
+    text-align: center;
+    
+ }
+
+ .feature-header h2{
+    margin: 20px;
+ }
+
+ .feature-area
+ {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-image: url(asset\ 34.svg);
+    background-position: center;
+    background-repeat:no-repeat ;
+   
+ }
+
+ .feature-card
+ {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    margin-top: 35px;
+    text-align: center;
+
+ }
+
+ .feature-card img{
+    width: 60px;
+ }
+
+ .big-feature
+ {
+    padding: 50px var(--padding-inline-section);
+    margin-top: 40px;
+    justify-content: space-around;
+    gap: 50px;
+ }
+ .big-feature-left img
+ {
+    width: 100%;
+ }
+
+ .big-feature-right
+ {
+    
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+   
+ }
+
+ .author
+ {
+    gap: 20px;
+ }
+
+
+ /*exa,mple*/
+ .example
+ {
+    margin-top: 30px;
+    justify-content: space-around;
+    
+ }
+
+ .example-type1
+ {
+    background-image:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(asset\ 36.jpeg) ;
+    min-height: 300px;
+    width: 200px;
+    position: relative;
+    
+ }
+.example-type2 {
+     background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),url(asset\ 37.jpeg);
+    min-height: 300px;
+    width: 200px;
+    position: relative;
+  }
+.example-type3 {
+     background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),url(asset\ 38.jpeg);
+    min-height: 300px;
+    width: 200px;
+    position: relative;
+ }
+.example-type4 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)),url(asset\ 39.jpeg);
+    min-height: 300px;
+    width: 200px;
+    position: relative;
+}
+
+.example p{
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto',sans-serif;
+    position:absolute;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+}
+.example:hover
+{
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.229);
+    background-color: rgba(128, 128, 128, 0.133);
+}
+
+.example-type1:hover
+{
+    box-shadow: 2px 2px 5px black;
+}
+.example-type2:hover {
+    box-shadow: 2px 2px 5px black;
+}
+.example-type3:hover {
+    box-shadow: 2px 2px 5px black;
+}
+.example-type4:hover {
+    box-shadow: 2px 2px 5px black;
+}
+
+/*cta*/
+
+.cta-content
+{
+    margin-top: 40px;
+    text-align: center;
+    padding: 50px;
+    flex-direction: column;
+    gap: 50px;
+    color: aliceblue;
+    background-color: #183b56;
+    min-height: 400px;
+    background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.1),rgb(0,0,0,0.4));
+
+}
+
+/*footer*/
+.footer-container
+{
+    padding: 60px 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: rgba(219, 230, 241, 0.901);
+}
+.footer-item
+{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/*subfooter*/
+
+.subfooter-container
+{
+    padding: 10px;
+    justify-content: center;
+    background-color: #b9cde4;
+    gap: 10px;
+}
